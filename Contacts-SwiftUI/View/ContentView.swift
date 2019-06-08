@@ -10,11 +10,12 @@ import SwiftUI
 
 struct ContentView : View {
     
-    let contacts: [Contact] = ContactsSource.contacts.sorted(by: { $0.firstName < $1.firstName })
     
     var body: some View {
         NavigationView {
             List(contacts.identified(by: \.lastName)) { contact in
+                if contact.isF
+                
                 NavigationButton(destination: ContactDetail(contact: contact)) {
                     ContactRow(contact: contact)
                 }

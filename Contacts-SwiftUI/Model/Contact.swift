@@ -1,6 +1,6 @@
 //
 //  Contact.swift
-//  Contacts
+//  Contacts-SwiftUI
 //
 //  Created by Bobby Conti on 4/26/19.
 //  Copyright © 2019 Bobby Conti. All rights reserved.

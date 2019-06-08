@@ -1,6 +1,6 @@
 //
-//  PlistLoader.swift
-//  Contacts
+//  Data.swift
+//  Contacts-SwiftUI
 //
 //  Created by Bobby Conti on 4/26/19.
 //  Copyright © 2019 Bobby Conti. All rights reserved.
@@ -8,9 +8,14 @@
 
 import Foundation
 
-enum PlistError: Error {
-    case invalidResource
-    case parsingFailure
+let contactData: [Contact] = ContactsSource.contacts.sorted(by: { $0.firstName < $1.firstName })
+
+// Loads data model with contact info from plist
+class ContactsSource {
+    static var contacts: [Contact] {
+        let data = try! PlistLoader.array(fromFile: "ContactsDB", ofType: "plist")
+        return data.compactMap { Contact(dictionary: $0) }
+    }
 }
 
 class PlistLoader {
@@ -27,15 +32,13 @@ class PlistLoader {
     }
 }
 
-// Loads data model with contact info from plist
-class ContactsSource {
-    static var contacts: [Contact] {
-        let data = try! PlistLoader.array(fromFile: "ContactsDB", ofType: "plist")
-        return data.compactMap { Contact(dictionary: $0) }
-    }
+enum PlistError: Error {
+    case invalidResource
+    case parsingFailure
 }
 
 // Extends ContactsSource to return arrays of section titles and sorted contacts
+/*
 extension ContactsSource {
     static var sortedUniqueFirstLetters: [String] {
         let firstLetters = contacts.map { $0.firstLetterForSort }
@@ -50,3 +53,4 @@ extension ContactsSource {
         }
     }
 }
+*/
