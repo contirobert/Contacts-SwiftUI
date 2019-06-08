@@ -8,8 +8,6 @@
 
 import Foundation
 
-import UIKit
-
 // Contact Data Model
 struct Contact: Hashable {
     let firstName: String
