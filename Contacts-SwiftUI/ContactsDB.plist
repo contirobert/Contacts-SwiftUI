@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>id</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>firstName</key>
 		<string>Edward</string>
 		<key>lastName</key>
@@ -26,7 +26,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>1</integer>
+		<string>1</string>
 		<key>firstName</key>
 		<string>Jameela</string>
 		<key>lastName</key>
@@ -48,7 +48,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>2</integer>
+		<string>2</string>
 		<key>firstName</key>
 		<string>Lisa</string>
 		<key>lastName</key>
@@ -70,7 +70,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>3</integer>
+		<string>3</string>
 		<key>firstName</key>
 		<string>Peter</string>
 		<key>lastName</key>
@@ -92,7 +92,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>4</integer>
+		<string>4</string>
 		<key>firstName</key>
 		<string>Jarrod</string>
 		<key>lastName</key>
@@ -114,7 +114,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>firstName</key>
 		<string>Tayanita</string>
 		<key>lastName</key>
@@ -136,7 +136,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>6</integer>
+		<string>6</string>
 		<key>firstName</key>
 		<string>Ricardo</string>
 		<key>lastName</key>
@@ -158,7 +158,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>7</integer>
+		<string>7</string>
 		<key>firstName</key>
 		<string>Gregory</string>
 		<key>lastName</key>
@@ -180,7 +180,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>8</integer>
+		<string>8</string>
 		<key>firstName</key>
 		<string>Ana</string>
 		<key>lastName</key>
@@ -202,7 +202,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>9</integer>
+		<string>9</string>
 		<key>firstName</key>
 		<string>Amos</string>
 		<key>lastName</key>
@@ -224,7 +224,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>10</integer>
+		<string>10</string>
 		<key>firstName</key>
 		<string>Katherine</string>
 		<key>lastName</key>
@@ -246,7 +246,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>11</integer>
+		<string>11</string>
 		<key>firstName</key>
 		<string>Selina</string>
 		<key>lastName</key>
@@ -268,7 +268,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>12</integer>
+		<string>12</string>
 		<key>firstName</key>
 		<string>Minh-Quang</string>
 		<key>lastName</key>
@@ -290,7 +290,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>13</integer>
+		<string>13</string>
 		<key>firstName</key>
 		<string>Tobias</string>
 		<key>lastName</key>
@@ -312,7 +312,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>14</integer>
+		<string>14</string>
 		<key>firstName</key>
 		<string>Alani</string>
 		<key>lastName</key>
@@ -334,7 +334,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>15</integer>
+		<string>15</string>
 		<key>firstName</key>
 		<string>Alissa</string>
 		<key>lastName</key>
@@ -356,7 +356,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>16</integer>
+		<string>16</string>
 		<key>firstName</key>
 		<string>Odom</string>
 		<key>lastName</key>
@@ -378,7 +378,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>17</integer>
+		<string>17</string>
 		<key>firstName</key>
 		<string>Candice</string>
 		<key>lastName</key>
@@ -400,7 +400,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>18</integer>
+		<string>18</string>
 		<key>firstName</key>
 		<string>Avinash</string>
 		<key>lastName</key>
@@ -422,7 +422,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>19</integer>
+		<string>19</string>
 		<key>firstName</key>
 		<string>Harpreet</string>
 		<key>lastName</key>
@@ -444,7 +444,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>20</integer>
+		<string>20</string>
 		<key>firstName</key>
 		<string>Amanda</string>
 		<key>lastName</key>
@@ -466,7 +466,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>21</integer>
+		<string>21</string>
 		<key>firstName</key>
 		<string>Victoria</string>
 		<key>lastName</key>
@@ -488,7 +488,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>22</integer>
+		<string>22</string>
 		<key>firstName</key>
 		<string>Stephanie</string>
 		<key>lastName</key>
@@ -510,7 +510,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>23</integer>
+		<string>23</string>
 		<key>firstName</key>
 		<string>Darius</string>
 		<key>lastName</key>
@@ -532,7 +532,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>24</integer>
+		<string>24</string>
 		<key>firstName</key>
 		<string>Jeffrey</string>
 		<key>lastName</key>
@@ -554,7 +554,7 @@
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>25</integer>
+		<string>25</string>
 		<key>firstName</key>
 		<string>Humayun</string>
 		<key>lastName</key>
