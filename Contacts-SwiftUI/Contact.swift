@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 // Contact Data Model
-struct Contact {
+struct Contact: Hashable {
     let firstName: String
     let lastName: String
     let phone: String
@@ -20,7 +20,7 @@ struct Contact {
     let city: String
     let state: String
     let zip: String
-    let image: UIImage?
+    let imageName: String
     var isFavorite: Bool
 }
 
@@ -36,7 +36,7 @@ extension Contact {
         static let city = "city"
         static let state = "state"
         static let zip = "zip"
-        static let image = "avatarName"
+        static let imageName = "avatarName"
     }
     
     init?(dictionary: [String: String]) {
@@ -58,12 +58,19 @@ extension Contact {
         self.state = stateString
         self.zip = zipString
         
-        if let imageName = dictionary[Key.image] {
-            self.image = UIImage(named: imageName)
+        if let imageName = dictionary[Key.imageName] {
+            self.imageName = imageName
         } else {
-            image = nil
+            self.imageName = "Default"
         }
         
         isFavorite = false
+    }
+}
+
+// Extends Contact to return first letter of first name to sort list of contacts
+extension Contact {
+    var firstLetterForSort: String {
+        return String(firstName.first!).uppercased()
     }
 }
