@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C5396AC722AC1F610050AC67 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5396AC622AC1F610050AC67 /* UserData.swift */; };
+		C5396ACB22AC2B330050AC67 /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5396ACA22AC2B330050AC67 /* ContactRow.swift */; };
+		C5396ACD22AC2B650050AC67 /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5396ACC22AC2B650050AC67 /* ContactDetail.swift */; };
 		C5E5197022A9C24F001FD52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E5196F22A9C24F001FD52C /* AppDelegate.swift */; };
 		C5E5197222A9C24F001FD52C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E5197122A9C24F001FD52C /* SceneDelegate.swift */; };
-		C5E5197422A9C24F001FD52C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E5197322A9C24F001FD52C /* ContentView.swift */; };
+		C5E5197422A9C24F001FD52C /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E5197322A9C24F001FD52C /* ContactList.swift */; };
 		C5E5197622A9C250001FD52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E5197522A9C250001FD52C /* Assets.xcassets */; };
 		C5E5197922A9C250001FD52C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5E5197822A9C250001FD52C /* Preview Assets.xcassets */; };
 		C5E5197C22A9C250001FD52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E5197A22A9C250001FD52C /* LaunchScreen.storyboard */; };
@@ -21,10 +23,12 @@
 
 /* Begin PBXFileReference section */
 		C5396AC622AC1F610050AC67 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C5396ACA22AC2B330050AC67 /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		C5396ACC22AC2B650050AC67 /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
 		C5E5196C22A9C24F001FD52C /* Contacts-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E5196F22A9C24F001FD52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5E5197122A9C24F001FD52C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5E5197322A9C24F001FD52C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5E5197322A9C24F001FD52C /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		C5E5197522A9C250001FD52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5E5197822A9C250001FD52C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5E5197B22A9C250001FD52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 		C5396AC922AC29A80050AC67 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C5E5197322A9C24F001FD52C /* ContentView.swift */,
+				C5E5197322A9C24F001FD52C /* ContactList.swift */,
+				C5396ACA22AC2B330050AC67 /* ContactRow.swift */,
+				C5396ACC22AC2B650050AC67 /* ContactDetail.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,7 +186,9 @@
 				C5E5197022A9C24F001FD52C /* AppDelegate.swift in Sources */,
 				C5E5197222A9C24F001FD52C /* SceneDelegate.swift in Sources */,
 				C5E5198722A9C351001FD52C /* Data.swift in Sources */,
-				C5E5197422A9C24F001FD52C /* ContentView.swift in Sources */,
+				C5396ACD22AC2B650050AC67 /* ContactDetail.swift in Sources */,
+				C5396ACB22AC2B330050AC67 /* ContactRow.swift in Sources */,
+				C5E5197422A9C24F001FD52C /* ContactList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
