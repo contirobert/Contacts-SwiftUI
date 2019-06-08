@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 // Contact Data Model
-struct Contact: Hashable {
+struct Contact: Hashable, Identifiable {
+    let id: Int
     let firstName: String
     let lastName: String
     let phone: String
@@ -26,6 +28,7 @@ struct Contact: Hashable {
 extension Contact {
     
     struct Key {
+        static let id = "id"
         static let firstName = "firstName"
         static let lastName = "lastName"
         static let phone = "phoneNumber"
@@ -38,7 +41,8 @@ extension Contact {
     }
     
     init?(dictionary: [String: String]) {
-        guard let firstNameString = dictionary[Key.firstName],
+        guard let idNumber = dictionary[Key.id],
+            let firstNameString = dictionary[Key.firstName],
             let lastNameString = dictionary[Key.lastName],
             let phoneString = dictionary[Key.phone],
             let emailString = dictionary[Key.email],
@@ -47,6 +51,7 @@ extension Contact {
             let stateString = dictionary[Key.state],
             let zipString = dictionary[Key.zip] else { return nil }
         
+        self.id = Int(idNumber)!
         self.firstName = firstNameString
         self.lastName = lastNameString
         self.phone = phoneString

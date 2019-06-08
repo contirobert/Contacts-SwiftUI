@@ -12,7 +12,7 @@ import Combine
 final class UserData: BindableObject {
     let didChange = PassthroughSubject<UserData, Never>()
     
-    var contacts = ContactsSource.contacts.sorted(by: { $0.firstName < $1.firstName }) {
+    var contacts = contactData {
         didSet {
             didChange.send(self)
         }

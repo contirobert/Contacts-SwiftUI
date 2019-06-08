@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct ContactList : View {
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
         NavigationView {
-            List(contactData.identified(by: \.lastName)) { contact in
+            List(userData.contacts) { contact in
                 NavigationButton(destination: ContactDetail(contact: contact)) {
                     ContactRow(contact: contact)
                 }
@@ -24,6 +26,7 @@ struct ContactList : View {
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         ContactList()
+            .environmentObject(UserData())
     }
 }
 #endif

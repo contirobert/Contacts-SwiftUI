@@ -9,7 +9,12 @@
 import SwiftUI
 
 struct ContactDetail : View {
-    let contact: Contact
+    @EnvironmentObject var userData: UserData
+    var contact: Contact
+    
+    var contactIndex: Int {
+        userData.contacts.firstIndex(where: { $0.id == contact.id })!
+    }
     
     var body: some View {
         VStack {
@@ -20,9 +25,22 @@ struct ContactDetail : View {
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .shadow(radius: 10)
             
-            Text("\(contact.firstName) \(contact.lastName)")
-                .font(.largeTitle)
-                .padding()
+            HStack {
+                Text("\(contact.firstName) \(contact.lastName)")
+                    .font(.largeTitle)
+                
+                Button(action: { self.userData.contacts[self.contactIndex].isFavorite.toggle() }) {
+                    if self.userData.contacts[self.contactIndex].isFavorite {
+                        Image(systemName: "star.fill")
+                            .font(.headline)
+                            .foregroundColor(.yellow)
+                    } else {
+                        Image(systemName: "star")
+                            .font(.headline)
+                            .foregroundColor(.gray)
+                    }
+                }
+            }
             
             HStack {
                 Text("Phone")
@@ -44,16 +62,9 @@ struct ContactDetail : View {
                     Text(contact.street).color(.gray)
                     Text("\(contact.city), \(contact.state) \(contact.zip)").color(.gray)
                 }
-                }.padding(.bottom, 5)
-            
-            HStack {
-                Text("Favorite")
-                Spacer()
-                
-                //Toggle()
-            }
+            }.padding(.bottom, 5)
             
             Spacer()
-            }.padding(40)
+        }.padding(40)
     }
 }
