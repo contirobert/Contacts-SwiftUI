@@ -41,6 +41,9 @@ Additional features were added to the original functionality of the app, includi
 
 ## :clap: Acknowledgements
 
-Contacts is a project from the [Introduction to Table Views](https://teamtreehouse.com/library/introduction-to-table-views) course at [Treehouse](https://teamtreehouse.com). All custom code is my own, but rights to the original concept and base code are reserved by Treehouse.
+The following resources were used in the development of this project. All custom code is my own.
+
+- [Introduction to Table Views](https://teamtreehouse.com/library/introduction-to-table-views)
+- [SwiftUI Essentials: Handling User Input](https://developer.apple.com/tutorials/swiftui/handling-user-input)
 
 Interested in learning more about iOS Development? [Sign up today](http://referrals.trhou.se/bobbyconti1)!
