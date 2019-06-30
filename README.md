@@ -8,7 +8,7 @@
 
 ## Overview
 
-Contacts-SwiftUI is an iOS app that impoves upon the original Contacts repo. It allows users to scroll through a dynamic list of contacts, bring up detail views with contact info, and mark contacts as favorites. The app incorporates:
+Contacts-SwiftUI is a contacts app built using SwiftUI! Scroll through a dynamic list of contacts, bring up detail views with contact info, and mark contacts as favorites! The app incorporates:
 
 - SwiftUI
 - Bindable Objects
