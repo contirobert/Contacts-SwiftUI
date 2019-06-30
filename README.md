@@ -6,7 +6,7 @@
   <img src="screenshot3.png" width="30%" height="30%">
 </div>
 
-## :clipboard: Overview
+## Overview
 
 Contacts-SwiftUI is an iOS app that impoves upon the original Contacts repo. It allows users to scroll through a dynamic list of contacts, bring up detail views with contact info, and mark contacts as favorites. The app incorporates:
 
@@ -17,16 +17,16 @@ Contacts-SwiftUI is an iOS app that impoves upon the original Contacts repo. It 
 - Images and Text
 - Plists
 
-## :hammer_and_wrench: Custom Features
+## Custom Features
 
 Additional features were added to the original functionality of the app, including:
 
 - Dynamic UI using SwiftUI
 - Circular Contact Photos with Shadow
 
-## :white_check_mark: Getting Started
+## Getting Started
 
-> :warning: This app is not available on the App Store.
+> This app is not available on the App Store.
 
 ### Prerequisites
 
@@ -39,7 +39,7 @@ Additional features were added to the original functionality of the app, includi
 2. Open the project in Xcode
 3. Run the simulator
 
-## :clap: Acknowledgements
+## Acknowledgements
 
 The following resources were used in the development of this project. All custom code is my own.
 
