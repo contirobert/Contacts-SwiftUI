@@ -21,9 +21,9 @@ struct ContactDetail : View {
             Image(contact.imageName)
                 .resizable()
                 .clipShape(Circle())
-                .frame(width: 200, height: 200)
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .shadow(radius: 10)
+                .frame(width: CGFloat(200), height: CGFloat(200))
+                .overlay(Circle().stroke(Color.white, lineWidth: CGFloat(4)))
+                .shadow(radius: CGFloat(10))
             
             HStack {
                 Text("\(contact.firstName) \(contact.lastName)")
@@ -45,24 +45,24 @@ struct ContactDetail : View {
             HStack {
                 Text("Phone")
                 Spacer()
-                Text(contact.phone).color(.gray)
-                }.padding(.bottom, 5)
+                Text(contact.phone).foregroundColor(.gray)
+                }.padding(.bottom, CGFloat(5))
             
             HStack {
                 Text("Email")
                 Spacer()
-                Text(contact.email).color(.gray)
-                }.padding(.bottom, 5)
+                Text(contact.email).foregroundColor(.gray)
+                }.padding(.bottom, CGFloat(5))
             
             HStack {
                 Text("Address")
                 Spacer()
                 
                 VStack(alignment: .trailing) {
-                    Text(contact.street).color(.gray)
-                    Text("\(contact.city), \(contact.state) \(contact.zip)").color(.gray)
+                    Text(contact.street).foregroundColor(.gray)
+                    Text("\(contact.city), \(contact.state) \(contact.zip)").foregroundColor(.gray)
                 }
-            }.padding(.bottom, 5)
+            }.padding(.bottom, CGFloat(5))
             
             Spacer()
         }.padding(40)
