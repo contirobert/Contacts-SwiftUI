@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-final class UserData: BindableObject {
+final class UserData: ObservableObject {
     let didChange = PassthroughSubject<UserData, Never>()
     
     var contacts = contactData {

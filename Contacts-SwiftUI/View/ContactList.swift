@@ -14,7 +14,7 @@ struct ContactList : View {
     var body: some View {
         NavigationView {
             List(userData.contacts) { contact in
-                NavigationButton(destination: ContactDetail(contact: contact)) {
+                NavigationLink(destination: ContactDetail(contact: contact)) {
                     ContactRow(contact: contact)
                 }
             }.navigationBarTitle(Text("Contacts"))
